@@ -1100,7 +1100,8 @@ input, select, textarea {
 
 				.panel > .inner.split > div {
 					margin-left: 4em;
-					width: 50%;
+					/* TODO: Cambiar a width: 50%; despues de terminar form de contacto  */
+					width: 100%;
 				}
 
 				.panel > .inner.split > :first-child {
