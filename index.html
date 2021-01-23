@@ -13,9 +13,11 @@
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/waitme@1.19.0/waitMe.min.css">
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
   </head>
   <body class="is-preload">
 
@@ -227,7 +229,7 @@
 
       <footer id="footer" class="panel">
         <div class="inner split">
-          <div>
+          <div class="first-block">
             <section>
               <h2>Jesús Caleb Oria Bastos</h2>
               <p>
@@ -264,10 +266,11 @@
               </ul>
             </section>
           </div>
-          <!-- <div>
+          <div class="second-block">
             <section>
               <h2>Escríbeme</h2>
-              <form method="post" action="#">
+              <div class='response' style="display: none;"><p></p></div>
+              <form class="form" id="contact-form">
                 <div class="fields">
                   <div class="field half">
                     <input
@@ -275,6 +278,7 @@
                       name="name"
                       id="name"
                       placeholder="Nombre"
+                      
                     />
                   </div>
                   <div class="field half">
@@ -283,6 +287,7 @@
                       name="email"
                       id="email"
                       placeholder="Correo"
+                      
                     />
                   </div>
                   <div class="field">
@@ -291,8 +296,12 @@
                       id="message"
                       rows="4"
                       placeholder="Mensaje"
+                      
                     ></textarea>
                   </div>
+                  <!-- <div class="field">
+                    <div class="g-recaptcha" data-sitekey="6LcF7jcaAAAAAKUxno-pGOiQs2B9Hq8ZuKDDjP30"></div>
+                  </div> -->
                 </div>
                 <ul class="actions">
                   <li>
@@ -302,7 +311,7 @@
                 </ul>
               </form>
             </section>
-          </div> -->
+          </div>
         </div>
       </footer>
 
@@ -311,9 +320,12 @@
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/waitme@1.19.0/waitMe.min.js"></script>
+    <script src="assets/js/data.js"></script>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
+    <script src="assets/js/util.js"></script>    
     <script src="assets/js/main.js"></script>
   </body>
 </html>

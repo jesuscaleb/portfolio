@@ -65,6 +65,31 @@
 	}
 }
 
+@-webkit-keyframes slide-in-fwd-center {
+	0% {
+	  -webkit-transform: translateZ(-1400px);
+			  transform: translateZ(-1400px);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-transform: translateZ(0);
+			  transform: translateZ(0);
+	  opacity: 1;
+	}
+  }
+  @keyframes slide-in-fwd-center {
+	0% {
+	  -webkit-transform: translateZ(-1400px);
+			  transform: translateZ(-1400px);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-transform: translateZ(0);
+			  transform: translateZ(0);
+	  opacity: 1;
+	}
+  }
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -184,7 +209,7 @@ input, select, textarea {
 
 /* Type */
 
-	body, input, select, textarea {
+	body, input, select, textarea, label {
 		color: #a0a0a1;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 15pt;
@@ -387,6 +412,7 @@ input, select, textarea {
 		text-decoration: none;
 		text-transform: uppercase;
 		white-space: nowrap;
+		outline: 0 !important;
 	}
 
 		input[type="submit"]:hover,
@@ -498,7 +524,7 @@ input, select, textarea {
 /* Form */
 
 	form {
-		margin: 0 0 2em 0;
+		margin: 0;
 	}
 
 		form > :last-child {
@@ -575,6 +601,18 @@ input, select, textarea {
 		font-size: 0.9em;
 		font-weight: 300;
 		margin: 0 0 1em 0;
+	}
+
+	.form div.field input.error,
+	.form div.field textarea.error  {
+		border: 2px rgb(219, 59, 59) solid;
+	}
+
+	label.error {
+		color: rgb(219, 59, 59);
+		
+		font-weight: 500;
+		letter-spacing: 0.05em;
 	}
 
 	input[type="text"],
@@ -1071,7 +1109,8 @@ input, select, textarea {
 		background: rgba(36, 38, 41, 0.975);
 		bottom: 4em;
 		left: 0;
-		max-height: calc(80vh - 4em);
+		/* max-height: calc(80vh - 4em); */
+		max-height: calc(100vh - 4em);
 		overflow-y: auto;
 		position: fixed;
 		width: 100%;
@@ -2092,4 +2131,22 @@ body {
 			color: inherit;
 		}
 
+	div.response {
+		margin: 20px auto;
+	}
+
+	div.response .success {
+		background-color: #34a58e;
+	}
+
+	div.response .error {
+		background-color: rgb(219, 59, 59);
+	}
+
+	div.response p {
+		margin: 0 auto;
+		padding: 10px;
+		text-align: center;
+		color: white;
+	}
 
