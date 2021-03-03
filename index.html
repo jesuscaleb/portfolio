@@ -3,55 +3,156 @@
   <head>
     <title>Mi portafolio</title>
     <meta charset="utf-8" />
-    <meta property="og:image" content="images/fulls/card.png">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://jesuscaleb.github.io/portfolio/">
-    <meta property="og:title" content="Mi portafolio">
-    <meta property="og:description" content="Mis proyectos y colaboraciones. Desarrollado por Jesus Caleb.">
+    <meta property="og:image" content="images/fulls/card.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jesuscaleb.github.io/portfolio/" />
+    <meta property="og:title" content="Mi portafolio" />
+    <meta
+      property="og:description"
+      content="Mis proyectos y colaboraciones. Desarrollado por Jesus Caleb."
+    />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/waitme@1.19.0/waitMe.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/waitme@1.19.0/waitMe.min.css"
+    />
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
     <script src="https://www.google.com/recaptcha/api.js"></script>
   </head>
   <body class="is-preload">
-
     <!-- Introduction -->
 
     <!--<div class="contact">
         
 
     </div>-->
-    
 
     <!-- Wrapper -->
     <div id="wrapper">
-
       <header id="header">
         <h1><strong>Mis proyectos y colaboraciones</strong></h1>
         <nav>
           <ul>
-            <li><a href="#footer" class="icon solid fa-info-circle">Contacto</a></li>
+            <li>
+              <a href="#footer" class="icon solid fa-info-circle">Contacto</a>
+            </li>
           </ul>
-        </nav> 
+        </nav>
       </header>
 
       <!-- Main -->
       <div id="main">
         <article class="thumb">
-            <a href="images/fulls/facturador.png" class="image img-hover-zoom--blur"
-              ><img src="images/fulls/fact-thumb.PNG" alt=""
-            /></a>
+          <a href="images/fulls/material.png" class="image"
+            ><img src="images/fulls/material.png" alt=""
+          /></a>
+          <div class="title-box">
+            <h2>Material</h2>
+          </div>
+          <p>
+            Aplicación CMS para la página MyAngular en proceso de desarrollo. Se
+            ha concluido con el módulo de autenticación y autorización de
+            usuarios según credenciales y permisos. Se ha
+            desarrollado con Angular 10, SASS, Material Design, Typescript, RXJS.
+          </p>
+          <button
+            class="btn-link"
+            type="button"
+            onclick="redirectTo('https://jesuscaleb.github.io/material')"
+          >
+            <i class="fa fa-external-link-alt"></i>
+            Visitar
+          </button>
+
+          <button
+            class="btn-link"
+            type="button"
+            onclick="redirectTo('https://github.com/jesuscaleb/material')"
+          >
+            <i class="fa fa-code"></i>
+            Código fuente
+          </button>
+        </article>
+
+        <article class="thumb">
+          <a href="images/fulls/myapi.png" class="image"
+            ><img src="images/fulls/myapi.png" alt=""
+          /></a>
+          <div class="title-box">
+            <h2>jcob-myapi</h2>
+          </div>
+          <p>
+            Desarrollo de una aplicación API REST que proporciona servicios a la
+            aplicación web "MyAngular". Esta desarrollada con NodeJS, Express y
+            MongoDB Atlas, JSON Web Tokens (JWT).
+          </p>
+          <button
+            class="btn-link"
+            type="button"
+            onclick="redirectTo('https://jcob-myapi.herokuapp.com/')"
+          >
+            <i class="fa fa-external-link-alt"></i>
+            Visitar
+          </button>
+
+          <button
+            class="btn-link"
+            type="button"
+            onclick="redirectTo('https://github.com/jesuscaleb/node-api-rest')"
+          >
+            <i class="fa fa-code"></i>
+            Código fuente
+          </button>
+        </article>
+
+        <article class="thumb">
+          <a href="images/fulls/myangular.png" class="image"
+            ><img src="images/fulls/myangular.png" alt=""
+          /></a>
+          <div class="title-box">
+            <h2>My Angular</h2>
+          </div>
+          <p>
+            Desarrollo de un blog personalizado que despliega artículos y es
+            posible administrarlos. Esta SPA (Single Page Application) está
+            desarrollada con Angular 10, Angular CLI, Typescript, SASS.
+          </p>
+          <button
+            class="btn-link"
+            type="button"
+            onclick="redirectTo('https://jesuscaleb.github.io/myangular')"
+          >
+            <i class="fa fa-external-link-alt"></i>
+            Visitar
+          </button>
+
+          <button
+            class="btn-link"
+            type="button"
+            onclick="redirectTo('https://github.com/jesuscaleb/myangular')"
+          >
+            <i class="fa fa-code"></i>
+            Código fuente
+          </button>
+        </article>
+
+        <article class="thumb">
+          <a
+            href="images/fulls/facturador.png"
+            class="image img-hover-zoom--blur"
+            ><img src="images/fulls/fact-thumb.PNG" alt=""
+          /></a>
           <div class="title-box">
             <h2>Facturación Electrónica</h2>
           </div>
           <p>
-            Completo desarrollo de una landing page para consultas de usuarios. 
+            Completo desarrollo de una landing page para consultas de usuarios.
             Las características principales de esta página es la legibilidad del
             contenido, un diseño peculiar y agradable, y una sencilla
             funcionalidad de contacto de los usuarios con la empresa. Esta
@@ -65,7 +166,7 @@
             <i class="fa fa-external-link-alt"></i>
             Visitar
           </button>
-        
+
           <button
             class="btn-link"
             type="button"
@@ -74,8 +175,72 @@
             <i class="fa fa-code"></i>
             Código fuente
           </button>
-          
         </article>
+
+        <article class="thumb">
+          <a href="images/fulls/sapfinal.png" class="image"
+            ><img src="images/fulls/sapfinal.png" alt=""
+          /></a>
+          <div class="title-box">
+            <h2>Sap desde cero</h2>
+          </div>
+          <p>
+            Desarrollo completo de una página web, sencilla funcionalidad de
+            registro para usuarios, legibilidad del contenido y un diseño
+            peculiar y agradable. Esta página esta desarrollada con Bootstrap 4,
+            SASS, JQuery.
+          </p>
+          <button
+            class="btn-link"
+            type="button"
+            onclick="redirectTo('http://sapdesdecero.com/')"
+          >
+            <i class="fa fa-external-link-alt"></i>
+            Visitar
+          </button>
+
+          <button
+            class="btn-link"
+            type="button"
+            onclick="redirectTo('https://github.com/jesuscaleb/sapdesdecero')"
+          >
+            <i class="fa fa-code"></i>
+            Código fuente
+          </button>
+        </article>
+
+        <article class="thumb">
+          <a href="images/fulls/itspagos.png" class="image"
+            ><img src="images/fulls/itspagos.png" alt=""
+          /></a>
+          <div class="title-box">
+            <h2>ITSYSTEMS PAGOS</h2>
+          </div>
+          <p>
+            Desarrollo de una página web que funciona únicamente como pasarela
+            de pago personalizado. Utiliza la API oficial de Culqi. Esta página
+            web está desarrollada con PHP7, CulqiJS, Bootstrap 4 y SASS.
+          </p>
+          <button
+            class="btn-link"
+            type="button"
+            onclick="redirectTo('http://shorturl.at/chwEV')"
+          >
+            <i class="fa fa-external-link-alt"></i>
+            Visitar
+          </button>
+
+          <button
+            class="btn-link"
+            type="button"
+            onclick="redirectTo('https://github.com/jesuscaleb/culqipay')"
+          >
+            <i class="fa fa-code"></i>
+            Código fuente
+          </button>
+        </article>
+
+
 
         <article class="thumb">
           <a href="images/fulls/rpafinal.png" class="image"
@@ -107,124 +272,6 @@
             Código fuente
           </button>
         </article>
-
-        <article class="thumb">
-          <a href="images/fulls/sapfinal.png" class="image"
-            ><img src="images/fulls/sapfinal.png" alt=""
-          /></a>
-          <div class="title-box">
-            <h2>Sap desde cero</h2>
-          </div>
-          <p>
-            Desarrollo completo de una página web, sencilla funcionalidad de registro para usuarios,
-            legibilidad del contenido y un diseño peculiar y agradable. Esta
-            página esta desarrollada con Bootstrap 4, SASS, JQuery.
-          </p>
-          <button
-            class="btn-link"
-            type="button"
-            onclick="redirectTo('http://sapdesdecero.com/')"
-          >
-            <i class="fa fa-external-link-alt"></i>
-            Visitar
-          </button>
-
-          <button
-            class="btn-link"
-            type="button"
-            onclick="redirectTo('https://github.com/jesuscaleb/sapdesdecero')"
-          >
-            <i class="fa fa-code"></i>
-            Código fuente
-          </button>
-        </article>
-
-        <article class="thumb">
-          <a href="images/fulls/itspagos.png" class="image"
-            ><img src="images/fulls/itspagos.png" alt=""
-          /></a>
-          <div class="title-box">
-            <h2>ITSYSTEMS PAGOS</h2>
-          </div>
-          <p>
-            Desarrollo de una página web que funciona únicamente como pasarela de pago personalizado. Utiliza la API oficial de Culqi. Esta página web está desarrollada con PHP7, CulqiJS, Bootstrap 4 y SASS.
-          </p>
-          <button
-            class="btn-link"
-            type="button"
-            onclick="redirectTo('http://shorturl.at/chwEV')"
-          >
-            <i class="fa fa-external-link-alt"></i>
-            Visitar
-          </button>
-
-          <button
-            class="btn-link"
-            type="button"
-            onclick="redirectTo('https://github.com/jesuscaleb/culqipay')"
-          >
-            <i class="fa fa-code"></i>
-            Código fuente
-          </button>
-        </article>
-
-        <article class="thumb">
-          <a href="images/fulls/myapi.png" class="image"
-            ><img src="images/fulls/myapi.png" alt=""
-          /></a>
-          <div class="title-box">
-            <h2>jcob-myapi</h2>
-          </div>
-          <p>
-            Desarrollo de una aplicación API REST que proporciona servicios a la aplicación web "MyAngular". Esta desarrollada con NodeJS, Express y MongoDB Atlas.
-          </p>
-          <button
-            class="btn-link"
-            type="button"
-            onclick="redirectTo('https://jcob-myapi.herokuapp.com/')"
-          >
-            <i class="fa fa-external-link-alt"></i>
-            Visitar
-          </button>
-
-          <button
-            class="btn-link"
-            type="button"
-            onclick="redirectTo('https://github.com/jesuscaleb/node-api-rest')"
-          >
-            <i class="fa fa-code"></i>
-            Código fuente
-          </button>
-        </article>
-
-        <article class="thumb">
-          <a href="images/fulls/myangular.png" class="image"
-            ><img src="images/fulls/myangular.png" alt=""
-          /></a>
-          <div class="title-box">
-            <h2>My Angular</h2>
-          </div>
-          <p>
-            Desarrollo de un blog personalizado que despliega artículos y es posible administrarlos. Esta SPA (Single Page Application) está desarrollada con Angular 10, Angular CLI, Typescript, SASS.
-          </p>
-          <button
-            class="btn-link"
-            type="button"
-            onclick="redirectTo('https://jesuscaleb.github.io/myangular')"
-          >
-            <i class="fa fa-external-link-alt"></i>
-            Visitar
-          </button>
-
-          <button
-            class="btn-link"
-            type="button"
-            onclick="redirectTo('https://github.com/jesuscaleb/myangular')"
-          >
-            <i class="fa fa-code"></i>
-            Código fuente
-          </button>
-        </article>
       </div>
 
       <footer id="footer" class="panel">
@@ -235,8 +282,9 @@
               <p>
                 Hola! Soy Jesús. Soy Front-end Developer y también un
                 profesional entusiasta en el ámbito de la computación y la
-                informática con buen conocimiento y experiencia en programación web. 
-                Disfruto desarrollar páginas y aplicaciones web aplicando las mejores prácticas de desarrollo posibles.
+                informática con buen conocimiento y experiencia en programación
+                web. Disfruto desarrollar páginas y aplicaciones web aplicando
+                las mejores prácticas de desarrollo posibles.
               </p>
             </section>
             <section>
@@ -269,7 +317,7 @@
           <div class="second-block">
             <section>
               <h2>Escríbeme</h2>
-              <div class='response' style="display: none;"><p></p></div>
+              <div class="response" style="display: none"><p></p></div>
               <form class="form" id="contact-form">
                 <div class="fields">
                   <div class="field half">
@@ -278,7 +326,6 @@
                       name="name"
                       id="name"
                       placeholder="Nombre"
-                      
                     />
                   </div>
                   <div class="field half">
@@ -287,7 +334,6 @@
                       name="email"
                       id="email"
                       placeholder="Correo"
-                      
                     />
                   </div>
                   <div class="field">
@@ -296,7 +342,6 @@
                       id="message"
                       rows="4"
                       placeholder="Mensaje"
-                      
                     ></textarea>
                   </div>
                   <!-- <div class="field">
@@ -314,7 +359,6 @@
           </div>
         </div>
       </footer>
-
     </div>
 
     <!-- Scripts -->
@@ -325,7 +369,7 @@
     <script src="assets/js/data.js"></script>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>    
+    <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
